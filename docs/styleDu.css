@@ -1,0 +1,432 @@
+/* Hide the message on large screens */
+.mobile-message {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  /* Show message and hide rest of site on small screens */
+  @media (max-width: 768px) {
+    .mobile-message {
+      display: block;
+    }
+  
+    /* Hide everything else on the page */
+    body > *:not(.mobile-message) {
+      display: none !important;
+    }
+}
+
+.mobile-illustration {
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin-top: 0px; /* Avoid top bar being hidden */
+/*     width: fit-content; */
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    width: 1304px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 0 #000;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    z-index: 9999;
+    top: 40px;
+    margin-left: 24px;
+    transition: top 0.3s, opacity 0.3s ease-in-out;
+    opacity: 0; /* Initially invisible */
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+}
+
+.menu {
+/*     margin-left: 100px; */
+    justify-self: center;
+    gap: 48px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.button-contact {
+    background-color: #3AAEA1;
+    color: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 0 24px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 0 #000;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button-contact:hover {
+    background-color: #30988E;
+}
+
+.badge {
+    position: absolute;
+    top: 66px;
+    left: 166px;
+    height: 48px;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 0 #000;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+    width: auto;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.hero-section {
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(135deg, #82CFE8 0%, #60B7D2 25%, #5fa3b9 50%, #6faec4 88%, #69a7bb 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.Footer-section {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #82CFE8 0%, #60B7D2 25%, #5fa3b9 50%, #6faec4 88%, #69a7bb 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(12.5px);
+}
+
+.circle-1 {
+    width: 204px;
+    height: 204px;
+    background-color: #98C3F4;
+    left: -95px;
+    top: 295px;
+    z-index: -1;
+}
+
+
+.circle-2 {
+    width: 322px;
+    height: 322px;
+    background-color: #ffffff;
+    opacity: 0.25;
+    left: 254px;
+    top: -85px;
+    filter: blur(20px);
+}
+
+.circle-3 {
+    width: 242px;
+    height: 242px;
+    background-color: #ffffff;
+    opacity: 0.25;
+    left: 1130px;
+    top: 432px;
+    filter: blur(20px);
+}
+
+.circle-4 {
+    width: 204px;
+    height: 204px;
+    background-color: #98C3F4;
+    left: 1338px;
+    top: -84px;
+    filter: blur(12.5px);
+}
+
+.hero-content {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 949px;
+    margin-bottom: 48px;
+    margin-top: 24px;
+}
+
+.hero-frame h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000; /* Text color changed to black */
+    line-height: 1.2;
+}
+
+.hero-frame h1 span {
+    font-family: 'Rochester', cursive;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.hero-frame p {
+    font-size: 16px;
+    color: #000; /* Text color changed to black */
+}
+
+.hero-frame .traits {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.trait {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000; /* Text color changed to black */
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.circle-trait {
+    width: 14px;
+    height: 14px;
+    align-items: center;
+    background-color: #6800FA;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 0 #000;
+}
+
+/* Scroll behavior for navigation bar */
+
+.scrolled {
+    top: -80px;
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    }
+
+    .menu {
+    display: none;
+    }
+
+    .menu-button {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    }
+
+    .badge {
+    position: static;
+    margin-top: 20px;
+    }
+
+    .hero-frame {
+    width: 90%;
+    margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-frame h1 {
+    font-size: 36px;
+    }
+
+    .hero-frame p {
+    font-size: 20px;
+    }
+
+    .hero-frame .traits {
+    flex-direction: column;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  /* lang button */
+  .lang-selector {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+
+  .lang-button {
+    background-color: #f0f0f0;
+    border: none;
+    box-shadow: 2px 2px #2626261f;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80px;
+  }
+
+  .lang-button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .flag-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  .flag-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 1;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+
+  .dropdown-content.show {
+    display: block;
+  }
+
+  .dropdown-content div {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .dropdown-content div:hover {
+    background-color: #f5f5f5;
+  }

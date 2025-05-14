@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milad Hemmati Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Rochester&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleHomeDu.css">
+</head>
+<body>
+
+
+
+<!-- Mobile Message -->
+<div class="mobile-message">
+  <img src="../Asset/Vectors/Under Cons.svg" alt="Mobile under construction" class="mobile-illustration">
+  <p>📱 <strong>Hallo daar!</strong><br><br>
+  De mobiele versie is momenteel in ontwikkeling om je de best mogelijke ervaring te bieden.<br>
+  Bezoek mijn site op een desktop om de volledige inhoud te bekijken.<br><br>
+  <span style="font-size: 1.2em;">Bedankt voor je geduld! 💻✨</span></p>
+</div>
+
+
+<!-- Desktop Version -->
+  <div class="container">
+    <nav id="navbar">
+      <div class="logo">Milad Hemmati</div>      
+      <div class="menu">
+        <a href="#hero">Startpagina</a>
+        <a href="#about">Over mij</a>
+        <a href="#software">Vaardigheden</a>
+        <a href="#projects">Projecten</a>
+      </div>
+      <div id="langCont">
+      <!--lang button-->
+      <p style="font-weight: 400;">Taal:</p>
+      <div class="lang-selector" id="lang-selector">
+        <button class="lang-button" id="lang-btn" type="button">
+          <div class="flag-circle"><img id="lang-flag" src="../Asset/Language/SVG/Dutch.svg" alt="NLD"></div>
+          <span id="lang-text">NLD</span>
+        </button>
+        <div class="dropdown-content" id="dropdown">
+          <div onclick="setLanguage('ENG', '../Asset/Language/SVG/English.svg', 'index.html')">
+            <div class="flag-circle"><img src="../Asset/Language/SVG/English.svg" alt="ENG"></div>
+            <span style="margin-left: 0.5rem;">ENG</span>
+          </div>
+          <div onclick="setLanguage('NLD', '../Asset/Language/SVG/Dutch.svg', 'indexDu.html')">
+            <div class="flag-circle"><img src="../Asset/Language/SVG/Dutch.svg" alt="NLD"></div>
+            <span style="margin-left: 0.5rem;">NLD</span>
+          </div>
+        </div>
+      </div>
+        <!-- contact button -->
+        <a href="#Contact" class="button-contact">Contact</a>
+        <div class="badge">UI/UX Designer</div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="hero">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+      <div class="circle circle-4"></div>
+
+      <div class="hero-content">
+        <div class="hero-frame">
+          <h1>Interfaces ontwerpen <span>&</span> ervaringen vormgeven</h1>
+          <p>Van verbeelding naar intuïtief ontwerp, pixel voor pixel.</p>
+
+          <div class="traits">
+            <div class="trait">Creatief</div>
+            <div class="circle-trait"></div>
+            <div class="trait">Minimalistisch</div>
+            <div class="circle-trait"></div>
+            <div class="trait">Gebruikersgericht</div>
+            <div class="circle-trait"></div>
+            <div class="trait">Detailgericht</div>
+          </div>
+          <div id="heroButtons">
+            <a href="./cv.html" target="_blank" class="buttonCv">
+            Mijn cv
+          </a>
+            <a href="./projectsDu.html" target="_blank" class="buttonProject">
+            Mijn projecten
+        </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- About Section -->
+<section id="about">
+  <div style="display: flex; align-items: center;">
+    
+    <!-- Image Container with Positioned Badge -->
+    <div class="titleBox">
+      <h2
+        class="titleText">
+        Over Mij
+      </h2>
+
+      <img class="myImg" src="../Asset/Photo Milad 4.jpg" alt="Milad's Photo" width="300px" height="300px">
+    </div>
+
+    <!-- Paragraph aligned vertically with image -->
+    <p class="aboutText">
+        Ik ben Milad Hemmati, een UI/UX-designer met een passie voor het creëren
+         van intuïtieve en visueel aantrekkelijke digitale ervaringen.
+          Met een achtergrond in stedenbouw en een scherp oog voor detail, 
+          benader ik elk project met zowel creatieve flair als gestructureerde logica. 
+          Ik haal energie uit het oplossen van ontwerpuitdagingen en geloof dat de beste 
+          interfaces een naadloze samensmelting zijn van vorm en functie.
+    </p>
+  </div>
+</section>
+
+<!-- Software Skills Section -->
+<section id="software">
+  <!-- Heading -->
+  <h2 class="titleText2">
+    Softwarevaardigheden
+  </h2>
+
+  <!-- Logos Container -->
+  <div class="skillCard">
+    <!-- Skill Card -->
+    <div id="skillCardContainer">
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/Figma.svg" alt="Figma Logo" width="35px">
+      <p class="skillText">Figma</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/Adobe_XD_CC_icon.svg" alt="Adobe XD Logo" width="40px">
+      <p class="skillText">Adobe XD</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator Logo" width="40px">
+      <p class="skillText">Adobe Illustrator</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/Adobe_Photoshop_CC_icon.svg" alt="Adobe Photoshop Logo" width="40px">
+      <p class="skillText">Adobe Photoshop</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/adobe-after-effects-icon.svg" alt="Adobe AfterEffects Logo" width="40px">
+      <p class="skillText">Adobe AfterEffects</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/html-5-logo-svgrepo-com.svg" alt="HTML Logo" width="50px">
+      <p class="skillText">HTML</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/CSS3_logo.svg" alt="CSS Logo" width="40px">
+      <p class="skillText">CSS</p>
+    </div>
+    <div class="eachSkillCard">
+      <img src="../Asset/Logos/javascript-1.svg" alt="JavaScript Logo" width="35px">
+      <p class="skillText">JavaScript</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Technical Skills Section -->
+<section id="Technical">
+  <!-- Heading -->
+  <h2 class="titleText2">
+    Technische vaardigheden
+  </h2>
+
+  <!-- Skills Container -->
+  <div class="skillCard2">
+    <!-- Skill Card -->
+    <div id="skillCardContainer2">
+    <div class="eachSkillCard2">
+        <p class="skillText2">Mobiel app-ontwerp</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Webapplicatieontwerp</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Gebruikersonderzoek</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Interactieontwerp</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Responsief ontwerp</p>
+      </div> 
+      <div class="eachSkillCard2">
+        <p class="skillText2">Gebruikersstroomontwerp</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Wireframes & prototyping</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Ontwerpsystemen en richtlijnen</p>
+      </div>
+      <div class="eachSkillCard2">
+        <p class="skillText2">Gebruiksvriendelijkheidstests</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <!-- Heading -->
+  <h2 class="titleText2">
+    Mijn Projecten
+  </h2>
+
+  <!-- Projects Container -->
+  <div class="ProjectsCard">
+    <!-- Projects Card -->
+    <div class="projectsContainer">
+      <div class="project-info">
+        <img src="../Asset/Projects/BISKS.svg" alt="Arcledi project" class="responsive-img">
+        <p class="project-number">01</p>
+        <p class="project-title">Arcledi Project</p>
+        <p class="project-subtitle">Bankieren webapplicatie</p>
+        <br>
+        <a href="./projectsDu.html" target="_blank" class="project-link">
+        <button class="go-to-button">
+        Bekijk project
+        </button>
+        </a>
+      </div>
+    </div>
+    <div class="projectsContainer">
+      <div class="project-info">
+        <img src="../Asset/Projects/ECO Plot.svg" alt="Arcledi project" class="responsive-img">
+        <p class="project-number">02</p>
+        <p class="project-title">ECO Plot</p>
+        <p class="project-subtitle">Mobiele app</p>
+        <br>
+        <a href="./projectsDu.html" target="_blank" class="project-link">
+        <button class="go-to-button">
+        Bekijk project
+        </button>
+        </a>
+      </div>
+    </div>
+    <div class="projectsContainer">
+      <div class="project-info">
+        <img src="../Asset/Projects/Cool City.svg" alt="Arcledi project" class="responsive-img">
+        <p class="project-number">03</p>
+        <p class="project-title">Cool City</p>
+        <p class="project-subtitle">Webapp-ontwerp</p>
+        <br>
+        <a href="./projectsDu.html" target="_blank" class="project-link">
+        <button class="go-to-button">
+        Bekijk project
+        </button>
+        </a> 
+      </div>
+    </div>
+    <div class="projectsContainer">
+      <div class="project-info">
+        <img src="../Asset/Projects/Ever Green.svg" alt="Arcledi project" class="responsive-img">
+        <p class="project-number">04</p>
+        <p class="project-title">Ever Green</p>
+        <p class="project-subtitle">Websiteontwerp</p>
+        <br>
+        <a href="./projectsDu.html" target="_blank" class="project-link">
+        <button class="go-to-button">
+        Bekijk project
+        </button>
+        </a>
+      </div>
+    </div>
+    <div class="projectsContainer">
+      <div class="project-info">
+        <img src="../Asset/Projects/Prime Cart.svg" alt="Arcledi project" class="responsive-img">
+        <p class="project-number">05</p>
+        <p class="project-title">Prime Cart</p>
+        <p class="project-subtitle">IOS App</p>
+        <br>
+        <a href="./projectsDu.html" target="_blank" class="project-link">
+        <button class="go-to-button">
+        Bekijk project
+        </button>
+        </a>
+      </div>
+    </div>
+    <div class="projectsContainer">
+      <div class="project-info">
+        <img src="../Asset/Projects/Pancake Plus.svg" alt="Arcledi project" class="responsive-img">
+        <p class="project-number">06</p>
+        <p class="project-title">Pancake Plus</p>
+        <p class="project-subtitle">Mobiele app</p>
+        <br>
+        <a href="./projectsDu.html" target="_blank" class="project-link">
+        <button class="go-to-button">
+        Bekijk project
+        </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="Contact" class="contact-section">
+  <h2 class="titleText2">Contact</h2>
+
+  <div class="contact-icons">
+    <div class="contact-card-group">
+
+      <div class="contact-card" onclick="copyToClipboard('(+46) 076 2807191')">
+        <img src="../Asset/Icons/Phone.svg" alt="Phone Icon" />
+        <p>(+46) 076 2807191</p>
+      </div>
+
+      <div class="contact-card" onclick="copyToClipboard('milad.hemmati.93@gmail.com')">
+        <img src="../Asset/Icons/Email.svg" alt="Email Icon" />
+        <p>milad.hemmati.93@gmail.com</p>
+      </div>
+
+      <div class="contact-card" onclick="window.open('https://www.linkedin.com/in/milad-hemmati-ba9481169/', '_blank')">
+        <img src="../Asset/Icons/Linkedin.svg" alt="LinkedIn Icon" />
+        <p>/Milad Hemmati</p>
+      </div>
+
+      <div class="contact-card" onclick="window.open('https://www.behance.net/milad-hemmati', '_blank')">
+        <img src="../Asset/Icons/Behance.svg" alt="Behance Icon" />
+        <p>/Milad-Hemmati</p>
+      </div>
+
+      <div class="contact-card" onclick="window.open('https://dribbble.com/Milad_Hemmati', '_blank')">
+        <img src="../Asset/Icons/Dribbble.svg" alt="Dribbble Icon" />
+        <p>/Milad-Hemmati</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="copiedPopup" class="copied-popup">Text copied!</div>
+</section>
+
+<!-- Footer Section -->
+<Section>
+    <div class="Footer-section">
+      <img src="../Asset/Logo/Logo Milad.svg" alt="Logo" style="display: flex; justify-self: center;">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-3"></div>
+      <div class="circle circle-4"></div>
+</Section>  
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <img src="../Asset/Vectors/Up Arrow.svg" alt="Up Arrow" style="width: 32px; height: 32px;">
+</button>
+
+
+<!-- JavaScript -->
+
+<script>
+  const btn = document.getElementById("lang-btn");
+  const dropdown = document.getElementById("dropdown");
+
+  btn.addEventListener("click", () => {
+    dropdown.classList.toggle("show");
+  });
+
+  function setLanguage(langCode, flagSrc, url) {
+    document.getElementById('lang-text').textContent = langCode;
+    document.getElementById('lang-flag').src = flagSrc;
+    document.getElementById('lang-flag').alt = langCode;
+    dropdown.classList.remove("show");
+    window.location.href = url;
+    // Optional: Add logic to update website language
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function(event) {
+    const selector = document.getElementById("lang-selector");
+    if (!selector.contains(event.target)) {
+      dropdown.classList.remove("show");
+    }
+  });
+</script>
+
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      const popup = document.getElementById('copiedPopup');
+      popup.style.display = 'block';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 1500);
+    });
+  }
+</script>
+
+<script>
+    // Scroll behavior for navigation bar
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+</script>
+
+
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>
