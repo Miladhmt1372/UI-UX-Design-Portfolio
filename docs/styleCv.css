@@ -883,7 +883,17 @@ html {
       display: flex; 
       justify-self: center;
       width: 100%;
-}
+    }
 
+    .headTitle {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media (max-width: 412px) {
+    .headTitle {
+      font-size: 1.2rem;
+    }
   }
   
